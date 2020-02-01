@@ -15,18 +15,25 @@
 //     return view('welcome');
 // });
 
-Route::get('/', 'BooksController@index')->name('books-list');
 
-Route::get('/book-details/{id}', 'BooksController@show')->name('book-details');
+Route::get('/', 'PagesController@index')->name('index');
 
-Route::get('/create-book', 'BooksController@create')->name('create-book');
+Route::get('/mvc', 'PagesController@mvc')->name('mvc');
 
-Route::post('/store-book', 'BooksController@store')->name('store-book');
+Route::get('/laravel', 'PagesController@laravel')->name('laravel');
 
-Route::get('/edit-book/{id}', 'BooksController@edit')->name('edit-book');
+Route::get('/books', 'BooksController@index')->name('books-list');
 
-Route::put('/update-book/{id}', 'BooksController@update')->name('update-book');
+Route::get('/books/book-details/{id}', 'BooksController@show')->name('book-details');
 
-Route::delete('/delete-book/{book}', 'BooksController@destroy')->name('destroy-book');
+Route::get('/books/create-book', 'BooksController@create')->name('create-book');
+
+Route::post('/books/store-book', 'BooksController@store')->name('store-book');
+
+Route::get('/books/edit-book/{id}', 'BooksController@edit')->name('edit-book');
+
+Route::put('/books/update-book/{id}', 'BooksController@update')->name('update-book');
+
+Route::delete('/books/delete-book/{book}', 'BooksController@destroy')->name('destroy-book');
 
 

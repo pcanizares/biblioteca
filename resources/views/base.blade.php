@@ -11,6 +11,27 @@
 
   <body>
 
+    <header>
+      CABECERA
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="{{ route('index') }}">Inicio</a>
+        </li>
+        <li>
+          <a href="{{ route('mvc') }}">MVC</a>
+        </li>
+        <li>
+          <a href="{{ route('laravel') }}">Laravel</a>
+        </li>
+        <li>
+          <a href="{{ route('books-list') }}">Books</a>
+        </li>
+      </ul>
+    </nav>
+
     @yield('content')
 
   </body>

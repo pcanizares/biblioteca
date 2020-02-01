@@ -8,7 +8,7 @@
 @section('content')
 
   <div>
-    <a href="{{ route('books-list') }}">Volver al istado de libros</a>
+    <a href="{{ route('books-list') }}">Volver al listado de libros</a>
   </div>
 
   <div>

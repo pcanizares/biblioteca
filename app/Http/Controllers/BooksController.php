@@ -68,7 +68,7 @@ class BooksController extends Controller
 
         $book->save();
 
-        return redirect('/');
+        return redirect('/books');
 
     }
 
@@ -117,7 +117,7 @@ class BooksController extends Controller
 
         $book->update();
 
-        return redirect('/');
+        return redirect('/books');
 
     }
 
@@ -126,7 +126,7 @@ class BooksController extends Controller
 
         $book->delete();
 
-        return redirect('/');
+        return redirect('/books');
 
     }
 
