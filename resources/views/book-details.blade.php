@@ -7,9 +7,11 @@
 
 @section('content')
 
-  <div>
+  {{-- <div>
     <a href="{{ route('books-list') }}">Volver al listado de libros</a>
-  </div>
+  </div> --}}
+
+  @include('includes/back-to-books')
 
   <div>
 
