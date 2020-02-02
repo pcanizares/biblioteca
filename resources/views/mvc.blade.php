@@ -5,7 +5,8 @@
 
   <style> 
     .jumbotron {
-      background-image: url('images/mvc-modelo-vista-controlador-portada.png');
+      background-image: url("{{ asset('images/mvc-modelo-vista-controlador-portada.png') }}");
+
     }
   </style>
 
@@ -43,7 +44,7 @@
       <h2>Componentes</h2>
 
       <div class='text-center'>
-        <img src='images/mvc-modelo-vista-controlador.png' class="img-fluid">
+        <img src="{{ asset('images/mvc-modelo-vista-controlador.png') }}" class="img-fluid">
       </div>
 
       <p>

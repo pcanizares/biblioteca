@@ -5,7 +5,7 @@
 
   <style> 
     .jumbotron {
-      background-image: url('images/libros2.jpg');
+      background-image: url("{{ asset('images/libros2.jpg') }}");
       background-repeat: no-repeat;
       background-blend-mode: soft-light !important;
       background-size: cover;
