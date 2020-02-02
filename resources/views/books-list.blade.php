@@ -53,16 +53,16 @@
                 <td>{{ $book->title }}</td>
                 <td>{{ $book->author }}</td>
                 <td clasS='text-center'>
-                  <a href="{{ route('book-details', [$book->id]) }}" class="btn btn-outline-info">Ver detalle</a>
+                  <a href="{{ route('book-details', [$book->id]) }}" class="btn btn-outline-info"><i class='fa fa-eye'></i> Ver detalle</a>
                 </td>
                 <td clasS='text-center'>
-                  <a href="{{ route('edit-book', [$book->id]) }}" class="btn btn-outline-primary">Editar</a>
+                  <a href="{{ route('edit-book', [$book->id]) }}" class="btn btn-outline-primary"><i class='fa fa-pencil'></i> Editar</a>
                 </td>
                 <td clasS='text-center'>
                   <form action="{{ route('destroy-book', [$book])}}" method='POST'>
                     {{ csrf_field() }}
                     {{ method_field('DELETE') }}
-                    <button type='submit' class="btn btn-outline-danger">Eliminar</button>
+                    <button type='submit' class="btn btn-outline-danger"><i class='fa fa-trash'></i> Eliminar</button>
                   </form>
                 </td>
               </tr>

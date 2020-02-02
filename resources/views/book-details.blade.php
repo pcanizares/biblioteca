@@ -23,6 +23,7 @@
     <hr class="my-4">
     <p>¿Te gusta leer? ¡Quizás este libro pueda gustarte!.</p>
     @include('includes/back-to-books')
+    <a class="btn btn-outline-primary btn-lg" href="{{ route('edit-book', [$book->id]) }}" role="button"><i class='fa fa-pencil'></i> Editar libro</a>
   </div>
 
 

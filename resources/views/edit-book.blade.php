@@ -23,6 +23,8 @@
     <hr class="my-4">
     <p>¿Te gusta leer? ¡Aquí puedes editar este libro a tu gusto!.</p>
     @include('includes/back-to-books')
+    <a class="btn btn-outline-info btn-lg" href="{{ route('book-details', [$book->id]) }}" role="button"><i class='fa fa-eye'></i> Ir al detalle</a>
+
   </div>
 
   {{-- <div>
@@ -84,7 +86,7 @@
           @endif
         </div>
         
-        <button type="submit" class="btn btn-success btn-block mt-4">Editar libro</button>
+        <button type="submit" class="btn btn-success btn-block mt-4"><i class='fa fa-save'></i> Editar libro</button>
 
       </form>
 

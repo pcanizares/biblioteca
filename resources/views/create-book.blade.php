@@ -75,7 +75,7 @@
       @endif
     </div>
     
-    <button type="submit" class="btn btn-success btn-block mt-4">Crear libro</button>
+    <button type="submit" class="btn btn-success btn-block mt-4"><i class='fa fa-save'></i> Crear libro</button>
 
   </form>  
 
