@@ -11,9 +11,41 @@
     @yield('title')
 
     <style>
-      #content {
-        margin-top:56px;
+      body {
+        /* background:red; */
       }
+      #content {
+        padding-top:56px;
+        min-height: 100%;
+        position: absolute;
+        width: 100%;
+      }
+
+      .main {
+        margin-bottom: 100px;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0px;
+      }
+
+      .jumbotron {
+        border-radius: 0px;
+        background-attachment: fixed;
+        background-repeat: repeat-x;
+        background-blend-mode: color-burn;
+      }
+
+      td{
+        vertical-align: middle !important;
+      }
+
+      .invalid-feedback {
+        display:block;
+      }
+
+
     </style>
 
   </head>
@@ -50,30 +82,32 @@
     </nav>
 
     <div id='content'>
+      <div class='main'>
+        @yield('content')
+      </div>
 
-      @yield('content')
+      <footer class='container-fluid mt-5'>
+        <div class='border-top pt-4 pb-4'>
+          <div class='row'>
+            <div class='col'>My Books &copy;{{ date('Y') }}</div>
+            <div class='col text-right'>
+              <a href='#' class='ml-3'>
+                <i class='fa fa-facebook'></i>
+              </a>
+              <a href='#' class='ml-3'>
+                <i class='fa fa-twitter'></i>
+              </a>
+              <a href='#' class='ml-3'>
+                <i class='fa fa-instagram'></i>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </footer>
 
     </div>
 
-    <footer class='container-fluid mt-5'>
-      <div class='border-top pt-4 pb-4'>
-        <div class='row'>
-          <div class='col'>My Books &copy;{{ date('Y') }}</div>
-          <div class='col text-right'>
-            <a href='#' class='ml-3'>
-              <i class='fa fa-facebook'></i>
-            </a>
-            <a href='#' class='ml-3'>
-              <i class='fa fa-twitter'></i>
-            </a>
-            <a href='#' class='ml-3'>
-              <i class='fa fa-instagram'></i>
-            </a>
-            
-          </div>
-        </div>
-      </div>
-    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

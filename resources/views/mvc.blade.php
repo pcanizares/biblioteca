@@ -6,10 +6,6 @@
   <style> 
     .jumbotron {
       background-image: url('images/mvc-modelo-vista-controlador-portada.png');
-      border-radius: 0px;
-      background-attachment: fixed;
-      background-repeat: repeat-x;
-      background-blend-mode: color-burn;
     }
   </style>
 
